@@ -22,7 +22,7 @@ The application then provides:
 - Decrypted output (when “Decrypt” is selected)  
 
 **🖼️ PREVIEW**  
-![Screenshot](.assets/screenshot.jpg) 
+![Screenshot](assets/screenshot.jpg) 
 (Screenshot placeholder)  
 
 **FILES INCLUDED**  
