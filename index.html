@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caesar Cipher - Roman Edition</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>🦅 Caesar Cipher Scroll 🏛️</h1>
+    <button id="mode-toggle">🌙 Night Camp</button>
+  </header>
+
+  <main>
+    <section class="choice-section">
+      <p>What do you want to do, General?</p>
+      <div class="choice-buttons">
+        <button id="encrypt-choice" class="active">🗡️ Seal the Scroll</button>
+        <button id="decrypt-choice">🛡️ Break the Code</button>
+      </div>
+    </section>
+
+    <section id="encrypt-section" class="cipher-section">
+      <h2>Encrypt the Message</h2>
+      <textarea id="encrypt-message" placeholder="Write your message..."></textarea>
+      <input type="number" id="encrypt-shift" placeholder="Shift (Wheel Rotation)">
+      <button onclick="encrypt()">Seal with Sword</button>
+      <div class="result" id="encrypt-result"></div>
+    </section>
+
+    <section id="decrypt-section" class="cipher-section hidden">
+      <h2>Decrypt the Message</h2>
+      <textarea id="decrypt-message" placeholder="Paste the secret scroll..."></textarea>
+      <input type="number" id="decrypt-shift" placeholder="Shift (Wheel Rotation)">
+      <button onclick="decrypt()">Crack with Shield</button>
+      <div class="result" id="decrypt-result"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with honor in the name of Caesar. ⚔️</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
